@@ -1,0 +1,22 @@
+<section class="crsl-TopSell col-md-12">
+    <div class="card-Carousel-Holder sc-carousel-wrapper col-md-12">
+      <div class="sc-carousel">
+        <ul class="cards" style="left: 0px; top: 0px;" >
+          <ng-transclude>
+            <!-- server li's -->
+          </ng-transclude>
+        <!-- ng-switch -->
+          <li ng-repeat="product in vm.carouselProducts" >
+            <div class="card cardA">
+              {{product.productId}}
+            </div>
+          </li>
+        <!-- ng switch -->
+
+        </ul>
+      </div>
+      {{vm.carouselSize}}
+      <button class="scroll-Left inactive" ng-click="prev()"></button>
+      <button class="scroll-Right" ng-click="next()"></button>
+    </div>
+</section>

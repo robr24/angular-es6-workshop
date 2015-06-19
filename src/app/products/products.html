@@ -1,0 +1,15 @@
+<div class="products-view">
+  <h1>Products</h1>
+  <ul>
+    <li ng-repeat="p in products.items">
+      <img ng-src="{{p.li}}" alt="">
+      <h2>{{p.n}}</h2>
+      <h4 ng-bind-html="p.sd"></h4>
+      <p>{{p.n}}</p>
+
+      <p>{{p.dp}}</p>
+      <button ng-click="products.addToCart(p)">Buy Now!</button>
+    </li>
+  </ul>
+
+</div>

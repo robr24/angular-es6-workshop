@@ -1,0 +1,46 @@
+
+
+  <div class="jumbotron text-center" style="height: 420px;">
+    <sc-carousel data-carousel-type="topic"></sc-carousel>
+    <sc-carousel data-carousel-type="product">
+      <li class="ng-scope">
+        <div class="card cardA" style="background-color: yellowgreen;">
+          SERVER: prod1670269
+        </div>
+      </li>
+
+         <li class="ng-scope">
+        <div class="card cardA" style="background-color: yellowgreen;">
+          SERVER: prod1670269
+        </div>
+      </li>
+
+         <li class="ng-scope">
+        <div class="card cardA" style="background-color: yellowgreen;">
+          SERVER: prod1670269
+        </div>
+      </li>
+
+         <li class="ng-scope">
+        <div class="card cardA" style="background-color: yellowgreen;">
+          SERVER: prod1670269
+        </div>
+      </li>
+
+
+    </sc-carousel>
+    <sc-carousel data-carousel-type="review"></sc-carousel>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-6 col-md-4" ng-repeat="awesomeThing in awesomeThings | orderBy:'rank'">
+      <div class="thumbnail">
+        <img class="pull-right" ng-src="assets/images/{{awesomeThing.logo}}" alt="{{awesomeThing.title}}">
+        <div class="caption">
+          <h3>{{awesomeThing.title}}</h3>
+          <p>{{awesomeThing.description}}</p>
+          <p><a ng-href="{{awesomeThing.url}}">{{awesomeThing.url}}</a></p>
+        </div>
+      </div>
+    </div>
+  </div>

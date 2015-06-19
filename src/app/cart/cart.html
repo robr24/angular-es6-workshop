@@ -1,0 +1,19 @@
+<div class="cart-view">
+  <h1>Cart</h1>
+  <table>
+    <tr ng-repeat="item in cart.cartItems track by $index">
+      <td>
+        <img ng-src="{{item.li}}" alt="" class="img-responsive">
+      </td>
+      <td>
+        <h2>{{item.n}}</h2>
+      </td>
+      <td>
+        <p>{{item.dp}}</p>
+      </td>
+      <td>
+        <button ng-click="cart.removeItem(item)">Remove</button>
+      </td>
+    </tr>
+  </table>
+</div>
